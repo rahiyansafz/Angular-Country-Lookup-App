@@ -1,0 +1,16 @@
+<h5 *ngIf="country.Name">Country details:</h5>
+<!-- <div class="container"> -->
+<div class="row" *ngIf="country.Name">
+	<div class="col-9 well hoverwell thumbnail">
+		
+		<div>Name:&nbsp;{{country?.Name}}</div>
+		<div>Currency:&nbsp;{{country?.CurrencyName}}</div>
+		<div>Lat/Long:&nbsp;{{country?.Latitude}} / {{country?.Longitude}}
+			<div>Area:&nbsp;{{country?.Area}}</div>
+		</div>
+	</div>
+	<div class="col-3">
+		<img [src]=country?.FlagPng alt="country flag" style="max-width: 150px;">
+	</div>
+</div>
+<!-- </div> -->

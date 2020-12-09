@@ -1,0 +1,14 @@
+td,th {
+  padding: .25rem;
+  border: solid 1px;
+}
+span:hover{
+          background-color: lightgreen;
+  
+}
+
+table {
+  height: 10px; 
+  overflow-y: "scroll"
+  
+}

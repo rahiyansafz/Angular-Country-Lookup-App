@@ -1,0 +1,19 @@
+<h3>Countries lookup app</h3>
+<br>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12" style="padding-bottom: 10px;">
+			<country-typeahead [placeHolderText]= "'Select a country'" (countrySelected)="countrySelected($event)"></country-typeahead>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<country-details [country]="selectedCountry"></country-details>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12" style="padding-bottom: 10px;">
+			<search-history (countryClick) = "countrySelected($event)"></search-history>
+		</div>
+	</div>
+</div>

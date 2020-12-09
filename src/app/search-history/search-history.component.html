@@ -1,0 +1,31 @@
+<h5 *ngIf="countriesList.length > 0">Search history:</h5>
+
+
+<!-- <table class="table table-hover" style="background-color: white;">
+	<tbody>
+		<tr *ngFor="let country of countriesList" (click)="countryClicked(country)">
+			<td>
+        {{country}}
+			</td>
+		</tr>
+	</tbody>
+</table> -->
+
+<table *ngIf="countriesList.length > 0" class="table table-hover table-striped" style="background-color: white;">
+  <thead>
+      <tr>
+        <th>Country</th>
+        <th>Last searched time</th>
+      </tr>
+  </thead>
+	<tbody>
+		<tr *ngFor="let country of cList" (click)="countryClicked(country)">
+			<td>
+        {{country | countryIso}}
+			</td>
+      <td>
+        {{country.searchDate | date: 'short' }}
+			</td>
+		</tr>
+	</tbody>
+</table>

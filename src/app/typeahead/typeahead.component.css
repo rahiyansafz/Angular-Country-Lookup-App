@@ -1,0 +1,15 @@
+
+
+.country-list {
+  border-style: solid;
+  border-width: 0px 1px 1px 1px;
+  font-family: inherit;
+  /* max-width: 50%; */
+}
+.country-dropdown {
+  cursor: pointer;
+}
+
+span :hover {
+  background-color: green;
+}
